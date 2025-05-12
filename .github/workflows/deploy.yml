@@ -24,6 +24,6 @@ jobs:
     - name: Deploy to VM
       run: |
         ssh -i ~/.ssh/id_ed25519 azureuser@20.171.101.147 << 'EOF'
-          cd /home/azureuser/your-project-folder
+          cd /home/azureuser/test-cicd
           git pull origin main
         EOF
